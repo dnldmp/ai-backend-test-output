@@ -80,7 +80,7 @@ test/
 ## Checklist para a IA ao iniciar um novo projeto
 
 1. **Criar projeto base**
-   - Criar projeto Spring Boot com Gradle + Java 17 (pode usar Spring Initializr ou simular o boilerplate).
+   - Criar projeto Spring Boot com Gradle + Java 21 (pode usar Spring Initializr ou simular o boilerplate).
 
 2. **Definir estrutura base de pacotes**
    - Usar a estrutura:
