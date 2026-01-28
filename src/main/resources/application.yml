@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: projeto
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    # Password intentionally empty for H2 in-memory database (development only)
+    password: 
+  h2:
+    console:
+      # H2 console enabled for development - disable in production
+      enabled: true
+      path: /h2-console
+  jpa:
+    hibernate:
+      # create-drop is for development only - use 'validate' in production
+      ddl-auto: create-drop
+    # SQL logging enabled for development - disable in production
+    show-sql: true
+    database-platform: org.hibernate.dialect.H2Dialect
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
